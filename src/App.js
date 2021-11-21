@@ -1,6 +1,7 @@
 // import Welcome from './components/Welcome';
 // import Hello from './components/Hello';
 // import Comment from './components/Comment';
+
 // // Dalam setiap komponen hanya bisa memiliki satu root elemen <div></div>
 
 // const komentar = {
@@ -12,29 +13,29 @@
 //     }
 // };
 
-import HomePage from "./pages/HomePage";
-import EmployeePage from "./pages/EmployeePage";
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route
-  } from "react-router-dom";
+// import HomePage from "./pages/HomePage";
+// import EmployeePage from "./pages/EmployeePage";
+// import {
+//     BrowserRouter as Router,
+//     Switch,
+//     Route
+//   } from "react-router-dom";
 
 
-function App(){
-    return(
-        <Router>
-        <div>
-            {/* <Comment text={komentar.text} date={komentar.date} author={komentar.author} /> */}
-            <Switch>
-            <Route exact path="/" component={HomePage} />
-            <Route path="/employee" component={EmployeePage} />
-            </Switch>
+// function App(){
+//     return(
+//         <Router>
+//         <div>
+//             {/* <Comment text={komentar.text} date={komentar.date} author={komentar.author} /> */}
+//             <Switch>
+//             <Route exact path="/" component={HomePage} />
+//             <Route path="/employee" component={EmployeePage} />
+//             </Switch>
         
-        </div>
-        </Router>
-    );
-}
+//         </div>
+//         </Router>
+//     );
+// }
 
 
 
@@ -48,8 +49,18 @@ function App(){
 //     </div>
 //     );
 // }
+import Example from './components/Example';
+import ExampleStateHook from './components/ExampleStateHook';
 
-
+function App(){
+    return(
+       <div>
+           <h1>ReactJS StateHook</h1>
+           <Example />
+           <ExampleStateHook />
+       </div>
+    );
+}
 
 
 export default App;
